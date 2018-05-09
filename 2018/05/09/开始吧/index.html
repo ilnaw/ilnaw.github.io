@@ -417,18 +417,8 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2018/05/09/测试/" title= 测试 >
-                    <div class="nextTitle">测试</div>
-                </a>
-            
         </li>
         <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href= "/2018/05/09/hello-world/" title= Hello World >
-                    <div class="prevTitle">Hello World</div>
-                </a>
             
         </li>
     </ul>
@@ -438,6 +428,23 @@ height:50vh;
 <!-- City版安装代码已完成 -->
     
     
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        // id: "开始吧", // 可选。默认为 location.href
+        owner: 'ilnaw',
+        repo: 'https://github.com/ilnaw/blogComment',
+        oauth: {
+            client_id: '3cda49eabcd2000b1ab9',
+            client_secret: 'd2be040a35218ee913961ef5057fcb25dc6966f6',
+        },
+    })
+    gitment.render('container')
+
+</script>
+
     <!--PC版-->
 
     <!--PC版-->
@@ -559,23 +566,7 @@ top:50vh;
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="total-archive"> Total : 3 </div>
+    <div class="total-archive"> Total : 1 </div>
     
     <div class="post-archive">
     
@@ -587,17 +578,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">05/09</span><a class="archive-post-title" href= "/2018/05/09/测试/" >测试</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">05/09</span><a class="archive-post-title" href= "/2018/05/09/开始吧/" >开始吧</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">05/09</span><a class="archive-post-title" href= "/2018/05/09/hello-world/" >Hello World</a>
         </li>
     
     </div>
